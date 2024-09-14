@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Colaboradores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cadastro de Cargos</h1>
+    <form id="cargoForm">
+        <label for="cargoNome">Nome do Cargo:</label>
+        <input type="text" id="cargoNome" required>
+        <button type="submit">Adicionar Cargo</button>
+    </form>
+    
+    <h2>Cargos Cadastrados</h2>
+    <ul id="cargoList"></ul>
+    
+    <h1>Cadastro de Departamentos</h1>
+    <form id="departamentoForm">
+        <label for="departamentoNome">Nome do Departamento:</label>
+        <input type="text" id="departamentoNome" required>
+        <button type="submit">Adicionar Departamento</button>
+    </form>
+    
+    <h2>Departamentos Cadastrados</h2>
+    <ul id="departamentoList"></ul>
+    
+    <h1>Cadastro de Colaboradores</h1>
+    <form id="colaboradorForm">
+        <label for="id">ID:</label>
+        <input type="text" id="id" required>
+        
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        
+        <label for="cargoSelect">Cargo:</label>
+        <select id="cargoSelect" required>
+            <option value="">Selecione um cargo</option>
+        </select>
+        
+        <label for="departamentoSelect">Departamento:</label>
+        <select id="departamentoSelect" required>
+            <option value="">Selecione um departamento</option>
+        </select>
+        <button type="submit">Salvar</button>
+    </form>
+    
+    <h2>Colaboradores Cadastrados</h2>
+    <ul id="colaboradorList"></ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>
